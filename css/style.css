@@ -1,34 +1,31 @@
 body {
-  background-color: rgba(232, 214, 240, 0.692);
+  background-color: rgba(212, 178, 212, 0.333);
 }
-
-.test {
-  border: 1px solid blue;
-  margin: 2px;
-  padding: 2px;
-}
+/* .test {
+  border: 4px solid blue;
+} */
 
 #left-sidebar {
   width: 30%;
   float: left;
-  border: 2px solid red;
+  /* border: 4px solid red; */
 }
 
 #news {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 #contact {
-  border: 2px solid black;
+  /* border: 4px solid black; */
 }
 
 #content {
-  border: 2px solid green;
-  padding-left: 30%;
+  /* border: 4px solid green; */
+  padding-left: 32%;
 }
 
 #content-wrap {
-  border: 2px solid blue;
+  /* border: 4px solid darkblue; */
 }
 
 .page-block {
@@ -36,7 +33,7 @@ body {
   padding: 24px;
   margin: 10px;
   border: 1px solid #777777;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 1px rgba(red, darkgreen, blue, alpha) (0, 0, 0, 0.3);
   border-radius: 1px;
 }
 #mypicture {
@@ -76,6 +73,21 @@ body {
   background-color: #ffffff;
 }
 
+.favorite {
+  font-weight: bold;
+}
+
+body {
+  background-color: rgba(212, 178, 212, 0.333);
+}
+/* div {
+  background-color: white;
+  margin: 10px;
+  border: 10px solid #777777;
+} */
+#motto {
+  color: darkgreen;
+}
 .favorite {
   font-weight: bold;
 }
