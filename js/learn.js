@@ -29,13 +29,27 @@ function sayWelcome() {
 var cursEUR = 4.5;
 var myEUR = 20;
 var myRON = 0;
-var friendEUR = 10;
+var friendEUR = 100;
 var friendRON = 0;
-
 // operatori * / + -
 
 myRON = myEUR * cursEUR;
 console.info("eu am " + myRON + " RON");
 
-friendRON = friendEUR * cursEUR;
+friendRON = friendEUR * cursEUR * 0.99;
 console.info("eu am " + friendRON + " RON");
+
+function extractFromATM(ammount) {
+  console.info("==== ==== ==== ==== ====");
+  console.info("suma extrasa este:" + ammount);
+  var comision = ammount * 0.01;
+  if (comision < 2.5) {
+    comision = 2.5;
+    console.warn("comision minim aplicat");
+  }
+  console.info("comision aplicat: " + comision);
+  console.info("==== ==== ==== ==== ====");
+}
+
+extractFromATM(1000);
+extractFromATM(100);
