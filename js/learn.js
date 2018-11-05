@@ -9,21 +9,21 @@ function learnVariables() {
   var template = "text cu ghilimele duble sau simple '";
   var age = "20";
 
+  var skills = ["html", "css", "js"];
+
+  prenume = "Dana";
+
+  console.info("toate variabilele au fost initializate");
+  console.log(nume);
+  console.debug("cum te cheama? -" + prenume);
+  sayWelcome();
+
+  function sayWelcome() {
+    console.info("Salut " + prenume + ", bine ai venit la noi");
+  }
+
   console.debug("auzi...? dar cum te cheama? -" + prenume);
   sayWelcome();
-}
-
-var skills = ["html", "css", "js"];
-
-prenume = "Dana";
-
-console.info("toate variabilele au fost initializate");
-console.log(nume);
-console.debug("cum te cheama? -" + prenume);
-sayWelcome();
-
-function sayWelcome() {
-  console.info("Salut " + prenume + ", bine ai venit la noi");
 }
 
 // schimb valutar
