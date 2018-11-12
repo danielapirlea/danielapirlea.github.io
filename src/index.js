@@ -1,8 +1,26 @@
-document.getElementById("app").innerHTML = `
-<h1>Hello Parcel!</h1>
-<div>
-  Look
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>
-  for more info about Parcel.
-</div>
-`;
+function showSkillsPage() {
+    document.getElementById("home-page").style.display = "none";
+    document.getElementById("skills-page").style.display = "block";
+    document.getElementById("languages-page").style.display = "none";
+}
+
+document.getElementById("skills-menu").onclick = showSkillsPage;
+
+function showHomePage() {
+    document.getElementById("home-page").style.display = "block";
+    document.getElementById("skills-page").style.display = "none";
+    document.getElementById("languages-page").style.display = "none";
+}
+
+document.getElementById("home-menu").onclick = showHomePage;
+
+function showLanguagesPage() {
+    document.getElementById("home-page").style.display = "none";
+    document.getElementById("skills-page").style.display = "none";
+    document.getElementById("languages-page").style.display = "block";
+}
+
+document.getElementById("languages-menu").onclick = showLanguagesPage;
+
+
+
