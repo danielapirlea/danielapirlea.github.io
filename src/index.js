@@ -1,8 +1,11 @@
+function $(id) {
+   return document.getElementById(id);
+}
 function hide(id) {
-    document.getElementById(id).style.display = "none";
+    $(id)style.display = "none";
 }
 function show(id) {
-    document.getElementById(id).style.display = "block";
+    $(id).style.display = "block";
 
 }
 
@@ -15,13 +18,13 @@ function showSkillsPage() {
 function showHomePage() {
    hide("skills-page");
    hide("languages-page");
-   shhow("home-page");
+   show("home-page");
 }
 
 function showLanguagesPage() {
    hide("home-page");
    hide("skills-page");
-    show("languages-page");
+   show("languages-page");
 }
 
 document.getElementById("home-menu").onclick = showHomePage;
